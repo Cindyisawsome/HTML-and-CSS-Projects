@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Cindy's portfolio</title>
+        <link rel="stylesheet" type="text/css" href="..\Finalproject\portfolio.css">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <nav class="navbar bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Home</a>
+                
+           
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+            </div>
+        </nav>
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="images/video/Typing.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        
+        <div class="fade-in-words">
+            
+            
+                
+            <h1><div class="first-words">Cindy's Portfolio</div> </h1>
+            <br>      
+            <div class="second-words">The computer programmer is a creator of universes for which he alone is the lawgiver. No playwright, no stage director, no emperor, however powerful,has ever exercised such absolute authority to arrange a stage or field of battle and to command such unswervingly dutiful actors or troops.</div>
+            <strong><div class="third-words">-Joseph Weizenbaum</div></strong>
+            <br>
+            <h2><div class="fourth-words">My name is Cindy. Welcome to my portfolio website. On it, I will tell you about my background and experience.</div>
+            <div class="fifth-words">Thank you for stopping by and enjoy! </div></h2>
+            
+            
+                
+           
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="..\Finalproject\pexels-photo-450035.jpeg" alt="Replace with your own image and description">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a software developer who loves to code! As a mother of a boy, I enjoy time writing code with my boy. 
+                    <br>
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">ALOCC</a>’s Software Development program, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
+                    <br>
+                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                    <p>
+                    <br>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <br>
+                    <p class="center"><a href="https://github.com/Cindyisawsome" target="_blank">Cindy's Github</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/Cindyisawsome" target="_blank"><img src="images\GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="..\Finalproject\istockphoto.jpg" alt="Contact_Image">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+    </br>
+    </br>
+        <!--水流柱 section--><!--This is what i added-->
+        <div class="Row" id="水流柱">
+            <style>
+                * {
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+                }
+                
+                
+                .loader {
+                  display: flex;
+                  justify-content: center;
+	              align-items: center;
+                  flex-direction: row;
+                }
+                .loader div {
+                  overflow: hidden;
+                  position: relative;
+                  width: 40px;
+                  height: 200px;
+                  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), #edf1f4);
+                  margin: 20px;
+                  border-radius: 50px;
+                  border: 2px solid #edf1f4;
+                  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 20px #fff,
+                    inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+                    inset 5px 5px 5px rgba(0, 0, 0, 0.5);
+                }
+               
+                .loader div::before {
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  z-index: 100;
+                  border-radius: 50px;
+                  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 20px #fff,
+                    inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+                    inset 5px 5px 5px rgba(0, 0, 0, 0.5);
+                }
+                .loader div::before {
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 36px;
+                  height: 36px;
+                  border-radius: 50%;
+                  box-shadow: inset -5px -5px 5px rgba(0, 0, 0, 0.1), 0 420px 0 400px #2196f3;
+                  animation: animate 2.5s ease-in-out infinite;
+                  animation-delay: calc(var(--x) * 0.3s);
+                  transform: translateY(160px);
+                }
+               
+                @keyframes animate {
+                  0% {
+                    transform: translateY(160px);
+                    filter: hue-rotate(0deg);
+                  }
+                  50% {
+                    transform: translateY(0px);
+                    filter: hue-rotate(180deg);
+                  }
+                  100% {
+                    transform: translateY(160px);
+                    filter: hue-rotate(360deg);
+                  }
+                }
+              </style> 
+            <div class="loader">
+            <div style="--x: 0"></div>
+            <div style="--x: 1"></div>
+            <div style="--x: 2"></div>
+            <div style="--x: 3"></div>
+            <div style="--x: 4"></div>
+            </div>
+
+            
+             
+              
+                    
+               
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
